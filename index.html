@@ -238,6 +238,51 @@ Because hope should never be limited by geography, and love should never stop at
     window.open(telegramLink, '_blank'); // Open Telegram in a new tab
     document.getElementById('thankYouMsg').style.display = 'block'; // Show thank-you message
   });
+
+
+
+  // Telegram base link
+  const telegramBase = "https://t.me/share/url?url=&text=";
+
+  // Store selected amount
+  let selectedAmount = "";
+
+  // When a preset amount button is clicked
+  document.querySelectorAll('.amount-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      selectedAmount = button.textContent.trim(); // Get amount like "$500"
+      const message = `I want to donate ${selectedAmount}`;
+      const telegramLink = telegramBase + encodeURIComponent(message);
+      window.open(telegramLink, '_blank');
+    });
+  });
+
+  // On form submission (Continue to Give)
+  document.querySelector('#donationForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Check if user entered a custom amount
+    const customInput = document.getElementById('customAmount').value;
+    if (customInput) {
+      selectedAmount = `$${customInput}`;
+    }
+
+    // Use default message if no amount selected
+    const message = selectedAmount
+      ? `I want to donate ${selectedAmount}`
+      : "I want to donate";
+
+    const telegramLink = telegramBase + encodeURIComponent(message);
+    window.open(telegramLink, '_blank');
+
+    // Optional: Show thank-you message
+    document.getElementById('thankYouMsg').style.display = 'block';
+  });
+
+
+
+
+  
 </script>
 
 
