@@ -561,6 +561,10 @@ html {
   text-align: center;
 }
 
+h2{
+  color: whitesmoke;
+}
+
 .stats-grid {
   display: flex;
   justify-content: space-around;
@@ -584,7 +588,7 @@ html {
 
 .stat p {
   font-weight: 600;
-  color: #333;
+  color: whitesmoke;
 }
 
 
@@ -903,4 +907,244 @@ html {
   100% {
     transform: translateX(-50%);
   }
+}
+
+
+
+.section-hero {
+  background-image: url('bgs0.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  color: white;
+}
+
+.section-mission {
+  background-image: url('bgs1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: white;
+}
+
+
+.section-victims {
+  background-image: url('bgs3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: white;
+}
+
+
+.section-donate {
+  background-image: url('bgs\ 4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: white;
+}
+
+
+
+
+
+.section-man {
+  background-image: url('bgs7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: white;
+}
+
+
+.section-dude {
+  background-image: url('bgs6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: black;
+}
+
+.section-june {
+  background-image: url('bgsT.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: black;
+}
+
+.section-july {
+  background-image: url('bgsM.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: black;
+}
+
+.section-aug {
+  background-image: url('bgsf.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: black;
+}
+
+
+
+.section-dec {
+  background-image: url('BGSL.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: whitesmoke;
+}
+
+
+
+.section-nov {
+  background-image: url('BGSGG.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: whitesmoke;
+}
+
+.section-oct {
+  background-image: url('BGSW.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: whitesmoke;
+}
+
+
+
+
+
+.contact-address {
+  background-image: url('your-background-image.jpg'); /* Replace with your own image */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.contact-address h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #FFD700;
+}
+
+.address-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.address-info {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.address-info h3 {
+  font-size: 1.3rem;
+  color: #fbb034;
+  margin-top: 15px;
+}
+
+.address-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.address-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.map-box {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+
+.contact-address {
+  background-image: url('your-background-image.jpg'); /* Replace with your own image */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.contact-address h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #FFD700;
+}
+
+.address-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.address-info {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.address-info h3 {
+  font-size: 1.3rem;
+  color: #fbb034;
+  margin-top: 15px;
+}
+
+.address-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.address-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.map-box {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+
+
+.header-title{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
