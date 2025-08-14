@@ -3,25 +3,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #2B2D42;
-  margin: 0;
-  padding: 0;
+   background-color: #2B2D42;
   color: #222;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
   width: 100vw;
   overflow-x: hidden;
-}
+   
+  
+  }
 
+
+  main{
+    margin: 0;
+    padding: 0;
+  }
 
 
 /* Header */
 .header {
   background-color: #2B2D42;
-  padding: 15px 20px;
+  padding: 0;
+  margin: 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -74,9 +92,11 @@ body {
   width: 180px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  padding: 10px 0;
-  gap: 12px;
+  padding:  0;
+  gap: 10px;
   z-index: 1001;
+  margin: 0;
+
 }
 
 .nav-links.show {
@@ -102,8 +122,6 @@ body {
 }
 
 
-
-/* Hero Section */
 .hero {
   background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
   padding: 100px 15px 80px;
@@ -111,11 +129,17 @@ body {
   color: white;
 }
 
+
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 15px;
   font-weight: 700;
   text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero-content{
+  margin-top: 0;
+  
 }
 
 .hero p {
@@ -836,7 +860,9 @@ h2{
   margin-top: 5px;
 }
 
-.victims-gallery {
+
+
+  .victims-gallery {
       width: 100%;
       max-width: none;
       margin: 0;
@@ -894,13 +920,16 @@ h2{
 
 
 
+
 .section-hero {
   background-image: url('bgs0.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 20px;
+  padding: 80px 20px;
   color: white;
+  
+
 }
 
 .section-mission {
@@ -1130,5 +1159,7 @@ h2{
   font-size: 20px;
   font-weight: bold;
   color: white;
-}
+  
 
+
+  
