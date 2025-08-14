@@ -404,21 +404,28 @@ backToTopBtn.addEventListener('click', () => {
 
 
 
-
-  const slides = document.querySelectorAll('.victim-slider .slide');
-  let index = 0;
-
-  function showNextSlide() {
-    slides[index].classList.remove('active');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
-  }
-
-  setInterval(showNextSlide, 500); // Change slide every 0.5 seconds
-
+// Initialize Swiper AFTER DOM is fully loaded
+  document.addEventListener("DOMContentLoaded", function() {
+    const swiper = new Swiper('.swiper', {
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      speed: 1500,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  });
 
 
 
 
   
-  
+
+
+ 
